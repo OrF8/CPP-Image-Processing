@@ -14,6 +14,7 @@
                   "\twi - the i'th layer's weights\n" \
                   "\tbi - the i'th layer's biases"
 #define USAGE_ERR "Error: wrong number of arguments."
+#define FILE_ERR(filePath) "Failed to open file: " + filePath
 #define ARGS_START_IDX 1
 #define ARGS_COUNT (ARGS_START_IDX + (MLP_SIZE * 2))
 #define WEIGHTS_START_IDX ARGS_START_IDX
@@ -45,8 +46,15 @@ void usage (int argc) noexcept (false)
  */
 bool readFileToMatrix (const std::string &filePath, Matrix &mat)
 {
-//TODO: implement this function
-  return true;
+	std::ifstream inputFile(filePath, std::ios::binary);
+	if (!inputFile.is_open())
+	{
+		std::cerr << FILE_ERR(filePath) << std::endl;
+		return false;
+	}
+	inputFile >> mat;
+	inputFile.close();
+	return true;
 }
 
 /**
