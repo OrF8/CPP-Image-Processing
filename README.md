@@ -1,7 +1,7 @@
 # 🖼️ CPP Image Processing
 This repository contains the implementation of Exercise 4 from the course [**67315 - Programming Workshop in C & C++**](https://shnaton.huji.ac.il/index.php/NewSyl/67315/2/2024/) at The Hebrew University Of Jerusalem ([HUJI](https://en.huji.ac.il/)). \
-The project focuses on building a simple image classification system using a Multi-Layer Perceptron (MLP) neural network implemented in C++. \
-The project received a final grade of 105 _(out of 105)_.
+The project focuses on building a simple image classification system using a Multi-Layer Perceptron (MLP) neural network implemented in C++. 
+> 🎓 Final Grade: **105** _(out of 105)_
 
 # 📦 Project Structure
 ````
