@@ -25,7 +25,7 @@ CPP-Image-Processing/
 
 # 🚀 Getting Started
 ## Prerequisites
-- C++ compiler supporting C++11 or later (e.g., `g++`)
+- C++ compiler supporting C++14 or later (e.g., `g++`)
 - Python 3.x (for running `plot_img.py`)​
 - Python packages: `matplotlib`, `numpy`
 ## Building the Project
